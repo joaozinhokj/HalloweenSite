@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    background-image: url('https://link-da-sua-imagem-de-halloween.jpg'); /* Coloque o link da imagem aqui */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+}
+
+.btn {
+    background-color: #ff7518;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.info, .alimentos, .entretenimento, .ingressos {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.ingressos {
+    background-color: #333;
+    color: #ff7518;
+}
+
+.ingresso-options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.pix-option, .dinheiro-option {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+    width: 45%;
+    color: #fff;
+}
+
+.pix-option h3, .dinheiro-option h3 {
+    font-family: 'Creepster', cursive;
+    margin-bottom: 15px;
+}
+
+.pix-option p, .dinheiro-option p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .ingresso-options {
+        flex-direction: column;
+    }
+
+    .pix-option, .dinheiro-option {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
